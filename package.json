@@ -1,5 +1,5 @@
 {
-  "name": "jeepay-nodejs-sdk",
+  "name": "@unifyxh/jeepay-nodejs-sdk",
   "version": "1.0.0",
   "type": "module",
   "description": "jeepay-nodejs-sdk",
