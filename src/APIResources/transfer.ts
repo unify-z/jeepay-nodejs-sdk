@@ -67,3 +67,7 @@ class Transfer{
         ).data;
     }
 }
+
+export {
+  Transfer
+}

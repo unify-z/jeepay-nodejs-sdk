@@ -1,3 +1,7 @@
+import { Pay } from "./APIResources/pay";
+import { Division } from "./APIResources/division";
+import { Transfer } from "./APIResources/transfer";
+
 const __config__ = {
   apiUrl: "",
   appId: "",
@@ -83,4 +87,4 @@ class SDKConfig {
 const appConfig = new AppConfig();
 const sdkConfig = new SDKConfig();
 
-export { appConfig, sdkConfig, AppConfig, SDKConfig };
+export { appConfig, sdkConfig, AppConfig, SDKConfig, Transfer, Pay, Division };
