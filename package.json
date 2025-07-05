@@ -1,0 +1,22 @@
+{
+  "name": "jeepay-nodejs-sdk",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "jeepay-nodejs-sdk",
+  "main": "dist/index.js",
+  "repository": "https://github.com/unify-z/jeepay-nodejs-sdk",
+  "author": "unify-z",
+  "license": "Apache-2.0",
+  "private": false,
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.0.4",
+    "nock": "^14.0.5",
+    "ts-jest": "^29.4.0",
+    "typescript": "^5.8.3"
+  },
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:watch": "jest --watch"
+  }
+}
