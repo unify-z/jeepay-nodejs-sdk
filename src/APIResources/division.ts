@@ -1,5 +1,5 @@
-import { httpClient } from "../HttpClient";
-import { generateReqParams } from "../utils";
+import { httpClient } from "../HttpClient.js";
+import { generateReqParams } from "../utils/index.js";
 
 interface DivisionBindUserParams {
   ifCode: string;

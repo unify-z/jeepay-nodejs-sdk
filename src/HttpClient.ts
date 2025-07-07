@@ -1,12 +1,9 @@
-import { appConfig, sdkConfig, SDKConfig } from ".";
-import { APIRequestException, APIResponseException } from "./exceptions";
+import { appConfig, sdkConfig, SDKConfig } from "./index.js";
+import { APIRequestException, APIResponseException } from "./exceptions.js";
 
 class HttpClient {
-  private readonly sdkConfig: SDKConfig;
-  constructor() {
-    this.sdkConfig = sdkConfig;
-  }
 
+  constructor(){}
   public async sendRequest(
     reqMethod: string = "post",
     reqUrl: string,
@@ -29,7 +26,7 @@ class HttpClient {
       } else if (method === "post" && reqParams) {
         options.body = JSON.stringify(reqParams);
       }
-      const timeout = this.sdkConfig.getHttpRequestTimeout();
+      const timeout = sdkConfig.getHttpRequestTimeout();
       const controller = new AbortController();
       const id = setTimeout(() => controller.abort(), timeout * 1000);
 

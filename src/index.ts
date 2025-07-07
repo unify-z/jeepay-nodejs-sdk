@@ -1,6 +1,6 @@
-import { Pay } from "./APIResources/pay";
-import { Division } from "./APIResources/division";
-import { Transfer } from "./APIResources/transfer";
+import { Pay } from "./APIResources/pay.js";
+import { Division } from "./APIResources/division.js";
+import { Transfer } from "./APIResources/transfer.js";
 
 const __config__ = {
   apiUrl: "",

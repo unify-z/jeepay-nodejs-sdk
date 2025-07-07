@@ -1,6 +1,6 @@
 import { createHash } from "crypto";
-import { SDKException } from "../exceptions";
-import { appConfig } from "..";
+import { SDKException } from "../exceptions.js";
+import { appConfig } from "../index.js";
 
 
 
